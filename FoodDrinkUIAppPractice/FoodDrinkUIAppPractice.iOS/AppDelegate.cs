@@ -1,4 +1,5 @@
-﻿using System;
+using Syncfusion.SfRating.XForms.iOS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,8 +23,11 @@ namespace FoodDrinkUIAppPractice.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+global::Xamarin.Forms.Forms.Init();
+SfRatingRenderer.Init();
             LoadApplication(new App());
+
+            Syncfusion.SfRating.XForms.iOS.SfRatingRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }

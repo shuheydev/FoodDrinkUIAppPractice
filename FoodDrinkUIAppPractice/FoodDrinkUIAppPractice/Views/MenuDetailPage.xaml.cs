@@ -15,6 +15,7 @@ namespace FoodDrinkUIAppPractice.Views
         public MenuDetailPage()
         {
             InitializeComponent();
+            BindingContext = new ViewModels.MenuDetailViewModel();
         }
     }
 }
